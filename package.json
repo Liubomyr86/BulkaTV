@@ -1,0 +1,24 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch html-css/sass/style.scss html-css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/liubomyr_demianchuk/html-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/liubomyr_demianchuk/html-css/issues"
+  },
+  "homepage": "https://bitbucket.org/liubomyr_demianchuk/html-css#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.53.0"
+  }
+}
