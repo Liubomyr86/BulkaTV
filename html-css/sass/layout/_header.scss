@@ -11,4 +11,11 @@
   &__logo {
     flex-shrink: 0;
   }
+
+  &__search {
+    align-items: center;
+    flex-grow: 1;
+    padding-right: 120px;
+    max-width: 590px;
+  }
 }

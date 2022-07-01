@@ -1,0 +1,19 @@
+.icon {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-mask-size: cover;
+
+  &_microphone {
+    -webkit-mask: url("assets/icons/microphone-solid.svg");
+    mask: url("assets/icons/microphone-solid.svg");
+    width: 23px;
+    height: 25px;
+    margin-left: 10px;
+    background: $secondary;
+
+    &:hover,
+    :focus {
+      background-color: $secondaryDark;
+    }
+  }
+}
