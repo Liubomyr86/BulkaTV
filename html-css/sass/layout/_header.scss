@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    column-gap: 100px;
   }
 
   &__logo {
@@ -17,5 +18,26 @@
     flex-grow: 1;
     padding-right: 120px;
     max-width: 590px;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    flex-shrink: 0;
+  }
+
+  &__menu {
+    position: relative;
+
+    &:hover {
+      .navigation {
+        display: block;
+      }
+
+      .btn_paw {
+        background-color: $secondary;
+      }
+    }
   }
 }

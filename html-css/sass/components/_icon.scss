@@ -16,4 +16,41 @@
       background-color: $secondaryDark;
     }
   }
+
+  &_bell {
+    -webkit-mask: url("assets/icons/bell-solid.svg");
+    mask: url("assets/icons/bell-solid.svg");
+    width: 25px;
+    height: 29px;
+    background: $secondary;
+
+    &:hover,
+    :focus {
+      background-color: $secondaryDark;
+    }
+  }
+
+  &_paw,
+  &_settings,
+  &_logout {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background: $neutralDark;
+  }
+
+  &_paw {
+    -webkit-mask: url("assets/icons/paw-solid.svg");
+    mask: url("assets/icons/paw-solid.svg");
+  }
+
+  &_settings {
+    -webkit-mask: url("assets/icons/gear-solid.svg");
+    mask: url("assets/icons/gear-solid.svg");
+  }
+  &_logout {
+    -webkit-mask: url("assets/icons/right-from-bracket-solid.svg");
+    mask: url("assets/icons/right-from-bracket-solid.svg");
+    background: $tertiary;
+  }
 }
