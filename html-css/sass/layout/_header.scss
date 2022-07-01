@@ -1,0 +1,14 @@
+.header {
+  box-shadow: 0px 4px 8px rgba(13, 14, 13, 0.19);
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+}
