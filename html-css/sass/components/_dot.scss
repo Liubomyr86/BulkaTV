@@ -1,0 +1,32 @@
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: $tertiary;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(255, 25, 100, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+
+  &_hiden {
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(255, 25, 100, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px rgba(255, 25, 100, 0);
+  }
+
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(255, 25, 100, 0);
+  }
+}

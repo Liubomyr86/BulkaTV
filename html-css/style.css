@@ -483,6 +483,16 @@ body {
   margin-right: 5px;
   background: #0d1015;
 }
+.icon_telegram, .icon_instagram, .icon_facebook {
+  width: 25px;
+  background: #0d1015;
+}
+.icon_telegram:hover,
+.icon_telegram :focus, .icon_instagram:hover,
+.icon_instagram :focus, .icon_facebook:hover,
+.icon_facebook :focus {
+  background-color: #0000ff;
+}
 .icon_paw {
   -webkit-mask: url("assets/icons/paw-solid.svg");
   mask: url("assets/icons/paw-solid.svg");
@@ -495,6 +505,21 @@ body {
   -webkit-mask: url("assets/icons/right-from-bracket-solid.svg");
   mask: url("assets/icons/right-from-bracket-solid.svg");
   background: #ff1964;
+}
+.icon_telegram {
+  -webkit-mask: url("assets/icons/telegram.svg");
+  mask: url("assets/icons/telegram.svg");
+  height: 26px;
+}
+.icon_instagram {
+  -webkit-mask: url("assets/icons/instagram.svg");
+  mask: url("assets/icons/instagram.svg");
+  height: 30px;
+}
+.icon_facebook {
+  -webkit-mask: url("assets/icons/facebook.svg");
+  mask: url("assets/icons/facebook.svg");
+  height: 25px;
 }
 
 .logo {
@@ -587,6 +612,124 @@ body {
   border-bottom-right-radius: 5px;
 }
 
+.user {
+  display: flex;
+  align-items: center;
+}
+.user__bg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  border-radius: 25px;
+  background-color: #ffffff;
+}
+.user__image {
+  width: 28px;
+  height: 25px;
+}
+.user__image_chuchu {
+  background-image: url("assets/images/chuchu.svg");
+}
+.user__image_coco {
+  background-image: url("assets/images/coco.svg");
+  width: 24px;
+}
+.user__image_lala {
+  background-image: url("assets/images/lala.svg");
+  width: 25px;
+}
+.user__image_momo {
+  background-image: url("assets/images/momo.svg");
+  width: 27px;
+  height: 21px;
+}
+.user__image_tt {
+  background-image: url("assets/images/tt.svg");
+  height: 24px;
+}
+.user__image_nana {
+  background-image: url("assets/images/nana.svg");
+}
+.user__image_toto {
+  background-image: url("assets/images/toto.svg");
+  width: 23px;
+}
+.user__image_dodo {
+  background-image: url("assets/images/dodo.svg");
+  width: 23px;
+}
+.user__image_tete {
+  background-image: url("assets/images/tete.svg");
+  width: 19px;
+}
+.user__dot {
+  margin-left: auto;
+}
+.user__name {
+  margin-left: 10px;
+  font-size: 1.7rem;
+  text-overflow: ellipsis;
+}
+.user__viewers {
+  margin-left: 10px;
+  font-size: 1.8rem;
+}
+
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: #ff1964;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgb(255, 25, 100);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+.dot_hiden {
+  overflow: hidden;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(255, 25, 100, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px rgba(255, 25, 100, 0);
+  }
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(255, 25, 100, 0);
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #aeafb0;
+}
+.info__text {
+  margin-bottom: 15px;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.info__text::selection {
+  color: #ffffff;
+  background: #ffbe7d;
+}
+.info__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 25px;
+}
+
 .header {
   box-shadow: 0px 4px 8px rgba(13, 14, 13, 0.19);
 }
@@ -594,7 +737,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 12.5px 16px;
   column-gap: 100px;
 }
 .header__logo {
@@ -620,6 +763,52 @@ body {
 }
 .header__menu:hover .btn_paw {
   background-color: #d7d7d7;
+}
+
+.main {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  flex-shrink: 0;
+  width: 240px;
+  background-color: #d7d7d7;
+  min-height: calc(100vh - 65px);
+}
+.sidebar__users {
+  position: fixed;
+  max-height: 500px;
+  width: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+.sidebar__users::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+.sidebar__users::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+}
+.sidebar__user {
+  padding: 14px 16px 17px;
+}
+.sidebar__user:last-child {
+  margin-bottom: 0;
+}
+.sidebar__user:hover {
+  background-color: #aeafb0;
+}
+.sidebar__info {
+  margin-top: auto;
+  padding: 14px 16px 17px;
+  width: 240px;
+  border-top: 1px solid #ffffff;
+  background-color: #d7d7d7;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

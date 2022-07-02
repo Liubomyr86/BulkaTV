@@ -39,11 +39,22 @@
     background: $neutralDark;
   }
 
+  &_telegram,
+  &_instagram,
+  &_facebook {
+    width: 25px;
+    background: $neutralDark;
+
+    &:hover,
+    :focus {
+      background-color: $neutralBlue;
+    }
+  }
+
   &_paw {
     -webkit-mask: url("assets/icons/paw-solid.svg");
     mask: url("assets/icons/paw-solid.svg");
   }
-
   &_settings {
     -webkit-mask: url("assets/icons/gear-solid.svg");
     mask: url("assets/icons/gear-solid.svg");
@@ -52,5 +63,21 @@
     -webkit-mask: url("assets/icons/right-from-bracket-solid.svg");
     mask: url("assets/icons/right-from-bracket-solid.svg");
     background: $tertiary;
+  }
+
+  &_telegram {
+    -webkit-mask: url("assets/icons/telegram.svg");
+    mask: url("assets/icons/telegram.svg");
+    height: 26px;
+  }
+  &_instagram {
+    -webkit-mask: url("assets/icons/instagram.svg");
+    mask: url("assets/icons/instagram.svg");
+    height: 30px;
+  }
+  &_facebook {
+    -webkit-mask: url("assets/icons/facebook.svg");
+    mask: url("assets/icons/facebook.svg");
+    height: 25px;
   }
 }

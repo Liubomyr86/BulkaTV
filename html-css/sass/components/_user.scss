@@ -1,0 +1,70 @@
+.user {
+  display: flex;
+  align-items: center;
+
+  &__bg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 25px;
+    background-color: $neutralLight;
+  }
+
+  &__image {
+    width: 28px;
+    height: 25px;
+
+    &_chuchu {
+      background-image: url("assets/images/chuchu.svg");
+    }
+    &_coco {
+      background-image: url("assets/images/coco.svg");
+      width: 24px;
+    }
+    &_lala {
+      background-image: url("assets/images/lala.svg");
+      width: 25px;
+    }
+    &_momo {
+      background-image: url("assets/images/momo.svg");
+      width: 27px;
+      height: 21px;
+    }
+    &_tt {
+      background-image: url("assets/images/tt.svg");
+      height: 24px;
+    }
+    &_nana {
+      background-image: url("assets/images/nana.svg");
+    }
+    &_toto {
+      background-image: url("assets/images/toto.svg");
+      width: 23px;
+    }
+    &_dodo {
+      background-image: url("assets/images/dodo.svg");
+      width: 23px;
+    }
+    &_tete {
+      background-image: url("assets/images/tete.svg");
+      width: 19px;
+    }
+  }
+
+  &__dot {
+    margin-left: auto;
+  }
+
+  &__name {
+    margin-left: 10px;
+    font-size: 1.7rem;
+    text-overflow: ellipsis;
+  }
+
+  &__viewers {
+    margin-left: 10px;
+    font-size: 1.8rem;
+  }
+}
