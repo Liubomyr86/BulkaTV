@@ -1,0 +1,30 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: $secondaryDark;
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+
+    // &::-moz-selection {
+    //   color: $neutralLight;
+    //   background: $primary;
+    // }
+
+    &::selection {
+      color: $neutralLight;
+      background: $primary;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+  }
+}
