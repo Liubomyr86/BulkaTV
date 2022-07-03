@@ -80,4 +80,12 @@
     mask: url("assets/icons/facebook.svg");
     height: 25px;
   }
+
+  &_ellipsis {
+    -webkit-mask: url("assets/icons/ellipsis-vertical-solid.svg");
+    mask: url("assets/icons/ellipsis-vertical-solid.svg");
+    height: 20px;
+    width: 5px;
+    background: $neutralDark;
+  }
 }

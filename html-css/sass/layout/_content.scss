@@ -1,6 +1,24 @@
 .content {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
   min-height: calc(100vh - 65px);
   padding: 14px 16px 17px 256px;
+
+  &__categories {
+    padding-top: 134px;
+  }
+
+  &__slider {
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+    background-color: $secondary;
+  }
+
+  &__video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
 }
