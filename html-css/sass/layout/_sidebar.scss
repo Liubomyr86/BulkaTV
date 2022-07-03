@@ -1,13 +1,15 @@
 .sidebar {
+  position: fixed;
   display: flex;
   flex-shrink: 0;
   width: 240px;
   background-color: $secondary;
   min-height: calc(100vh - 65px);
+  z-index: 10;
 
   &__users {
     position: fixed;
-    max-height: 500px;
+    max-height: 55vh;
     width: 240px;
     overflow-y: auto;
     overflow-x: hidden;
