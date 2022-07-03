@@ -483,14 +483,15 @@ body {
   margin-right: 5px;
   background: #0d1015;
 }
-.icon_telegram, .icon_instagram, .icon_facebook {
+.icon_telegram, .icon_instagram, .icon_facebook, .icon_youtube {
   width: 25px;
   background: #0d1015;
 }
 .icon_telegram:hover,
 .icon_telegram :focus, .icon_instagram:hover,
 .icon_instagram :focus, .icon_facebook:hover,
-.icon_facebook :focus {
+.icon_facebook :focus, .icon_youtube:hover,
+.icon_youtube :focus {
   background-color: #0000ff;
 }
 .icon_paw {
@@ -520,6 +521,12 @@ body {
   -webkit-mask: url("assets/icons/facebook.svg");
   mask: url("assets/icons/facebook.svg");
   height: 25px;
+}
+.icon_youtube {
+  -webkit-mask: url("assets/icons/youtube.svg");
+  mask: url("assets/icons/youtube.svg");
+  height: 22px;
+  margin-left: 10px;
 }
 .icon_ellipsis {
   -webkit-mask: url("assets/icons/ellipsis-vertical-solid.svg");
@@ -971,6 +978,24 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+.footer__text {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.footer__text::selection {
+  color: #ffffff;
+  background: #ffbe7d;
 }
 
 /*# sourceMappingURL=style.css.map */

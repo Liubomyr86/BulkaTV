@@ -41,7 +41,8 @@
 
   &_telegram,
   &_instagram,
-  &_facebook {
+  &_facebook,
+  &_youtube {
     width: 25px;
     background: $neutralDark;
 
@@ -79,6 +80,12 @@
     -webkit-mask: url("assets/icons/facebook.svg");
     mask: url("assets/icons/facebook.svg");
     height: 25px;
+  }
+  &_youtube {
+    -webkit-mask: url("assets/icons/youtube.svg");
+    mask: url("assets/icons/youtube.svg");
+    height: 22px;
+    margin-left: 10px;
   }
 
   &_ellipsis {
