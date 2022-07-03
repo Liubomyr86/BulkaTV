@@ -1,0 +1,46 @@
+.categories {
+  position: absolute;
+  padding-top: 134px;
+  max-height: calc(100vw - 273px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-134px);
+  transform-origin: right top;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 140px;
+
+  & :first-child {
+    color: $neutralLight;
+    background-color: $primary;
+  }
+
+  &::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+  }
+  &::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+  }
+
+  &__item {
+    border: 1px solid $secondaryDark;
+    background-color: $secondary;
+    padding: 7px;
+    border-radius: 25px;
+    height: 33px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondaryDark;
+      color: $neutralDark;
+    }
+  }
+}
