@@ -2,12 +2,14 @@
   display: inline-block;
   cursor: pointer;
   -webkit-mask-size: cover;
+  transition: all 0.3s ease-out;
 
   &_microphone {
+    flex-shrink: 0;
     -webkit-mask: url("assets/icons/microphone-solid.svg");
     mask: url("assets/icons/microphone-solid.svg");
-    width: 23px;
-    height: 25px;
+    width: 21px;
+    height: 28px;
     margin-left: 10px;
     background: $secondary;
 

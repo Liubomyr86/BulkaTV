@@ -14,7 +14,7 @@
 
   &__image {
     width: 100%;
-    max-width: 535px;
+    max-width: 1150px;
     height: auto;
   }
 
@@ -67,37 +67,8 @@
   }
 
   &__discription {
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
     padding-right: 10px;
-  }
-
-  &__content {
-    margin-left: 10px;
-    cursor: pointer;
-  }
-
-  &__title,
-  &__name {
-    &:hover {
-      color: $neutralBlue;
-    }
-  }
-
-  &__title {
-    margin: 0 0 5px 10px;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-    letter-spacing: 2px;
-    max-width: calc((100vw - 270px) / 4);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  &__name {
-    color: $secondaryDark;
   }
 
   &__ellipsis {
