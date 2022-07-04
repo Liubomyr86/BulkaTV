@@ -1,5 +1,6 @@
 .btn {
   cursor: pointer;
+  transition: all 0.3s ease-out;
 
   &_paw {
     background: url("assets/icons/paw-solid.svg") no-repeat center/50% $primary;

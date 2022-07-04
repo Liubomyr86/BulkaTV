@@ -1,0 +1,40 @@
+.discription {
+  display: flex;
+  align-items: center;
+
+  &__content {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  &__title,
+  &__name {
+    transition: all 0.3s ease-out;
+    &:hover {
+      color: $neutralBlue;
+    }
+  }
+
+  &__title {
+    margin: 0 0 5px 10px;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    letter-spacing: 2px;
+    max-width: calc((100vw - 270px) / 4);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (max-width: 1200px) {
+      max-width: calc((100vw - 65px) / 3);
+    }
+
+    @media (max-width: 780px) {
+      max-width: calc((100vw - 65px) / 1.5);
+    }
+  }
+
+  &__name {
+    color: $secondaryDark;
+  }
+}

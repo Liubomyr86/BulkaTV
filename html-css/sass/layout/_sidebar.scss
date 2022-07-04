@@ -7,6 +7,10 @@
   min-height: calc(100vh - 65px);
   z-index: 10;
 
+  @media (max-width: 1200px) {
+    width: 65px;
+  }
+
   &__users {
     position: fixed;
     max-height: 55vh;
@@ -14,6 +18,10 @@
     overflow-y: auto;
     overflow-x: hidden;
     cursor: pointer;
+
+    @media (max-width: 1200px) {
+      width: 65px;
+    }
 
     &::-webkit-scrollbar-button {
       width: 1px;
@@ -28,6 +36,8 @@
 
   &__user {
     padding: 14px 16px 17px;
+    transition: all 0.3s ease-out;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -44,5 +54,9 @@
     border-top: 1px solid $neutralLight;
     background-color: $secondary;
     z-index: 1;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 }

@@ -1,14 +1,17 @@
 .categories {
   position: absolute;
-  max-height: calc(100vw - 273px);
+  max-height: calc(100vw - 288px);
   overflow-y: auto;
   overflow-x: hidden;
   transform: rotate(-90deg) translateY(-134px);
   transform-origin: right top;
-
   display: flex;
   flex-direction: column;
   row-gap: 140px;
+
+  @media (max-width: 1200px) {
+    max-height: calc(100vw - 113px);
+  }
 
   & :first-child {
     color: $neutralLight;
@@ -36,6 +39,7 @@
     text-align: center;
     font-size: 1.6rem;
     cursor: pointer;
+    transition: all 0.3s ease-out;
 
     &:hover {
       background-color: $secondaryDark;

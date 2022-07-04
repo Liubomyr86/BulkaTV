@@ -5,15 +5,16 @@
   min-height: calc(100vh - 65px);
   padding: 14px 16px 17px 256px;
 
+  @media (max-width: 1200px) {
+    padding: 14px 16px 17px 81px;
+  }
+
   &__categories {
     padding-top: 134px;
   }
 
   &__slider {
-    margin-top: 100px;
-    height: 300px;
-    width: 100%;
-    background-color: $secondary;
+    margin: 100px 0;
   }
 
   &__video {
@@ -21,5 +22,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     margin-bottom: 30px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 780px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

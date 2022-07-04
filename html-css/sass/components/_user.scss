@@ -67,4 +67,12 @@
     margin-left: 10px;
     font-size: 1.8rem;
   }
+
+  &__dot,
+  &__name,
+  &__viewers {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
 }
